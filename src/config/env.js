@@ -14,10 +14,13 @@ const requiredEnvVars = [
 
 // Validation des variables d'environnement
 function validateEnv() {
-  // TODO: Implémenter la validation
-  // Si une variable manque, lever une erreur explicative
+  requiredEnvVars.forEach((key) => {
+    if (!process.env[key]) {
+        throw new Error(`Variable d'environnement manquante : ${key}`);
+    }
+});
 }
-
+validateEnv();
 module.exports = {
   mongodb: {
     uri: process.env.MONGODB_URI,
