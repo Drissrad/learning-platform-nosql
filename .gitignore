@@ -1,3 +1,31 @@
 # Compléter ici !!!!???
 
 node_modules
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Cache et artefacts
+.cache/
+dist/
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# IDE/éditeur
+.vscode/
+.idea/
+
+# Dépendances spécifiques
+*.lock
+coverage/
+
+# Ignorer les captures d'écran ajoutées temporairement
+screenshots/
