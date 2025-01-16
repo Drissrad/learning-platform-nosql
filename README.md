@@ -33,7 +33,7 @@ GET /api/courses/stats : Obtenir les statistiques des cours
 Node.js & Express : Utilisé pour sa simplicité et sa popularité dans la création d'API RESTful.
 MongoDB : Base de données NoSQL choisie pour sa flexibilité dans le stockage des documents JSON.
 Redis : Implémenté pour le cache, améliorant les performances lors des requêtes répétitives.
-## Réponses aux questions dans le code
+## Réponses aux questions 
 1. Pourquoi créer un module séparé pour les connexions aux bases de données ?
 Réponse :
 Créer un module séparé permet de centraliser la logique de connexion pour MongoDB et Redis. Cela facilite la réutilisation, la maintenance, et garantit une séparation des préoccupations dans le code.
@@ -94,7 +94,6 @@ Réponse :
 Pour gérer les configurations spécifiques à chaque environnement (développement, production).
 Pour sécuriser les informations sensibles sans les inclure dans le code source.
 ## Documentation visuelle
-### Requête POST /api/courses
 Voici un exemple de requête envoyée via Postman pour créer un cours :
 ![Requête POST /api/courses](images/img1.png)
 Voici un exemple de requête Obtenir un cours par son ID :
